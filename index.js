@@ -11,6 +11,17 @@ const ubahHurufKeKecil = (huruf) => {
   return hasilHuruf;
 };
 
+const ubahSemuaHuruf = (kata) => {
+  let kataBaru = "";
+
+  for (let i = 0; i < kata.length; i++) {
+    const hurufKecil = ubahHurufKeKecil(kata[i]);
+    kataBaru = kataBaru + hurufKecil;
+  }
+
+  return kataBaru;
+};
+
 const apakahCocok = (satu,dua) {
 
 }
